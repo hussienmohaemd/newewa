@@ -1,0 +1,182 @@
+body
+{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    direction: rtl;
+
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background:#353637 ;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom : #32a0c2 5px solid;
+}
+
+header a{
+    color: white;
+    text-decoration : none;
+    font-size: 19px;
+}
+
+header li
+{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand
+{
+    float: right;
+
+}
+
+header #brand h1
+{
+    margin: 0;
+    color : #30a0c2
+
+}
+
+header nav 
+{
+    float: left;
+    margin-top: 10px;
+
+}
+
+header .current a
+{
+    color: #30a0c2;
+    font-weight: bold;
+}
+
+header a:hover
+{
+    color:rgb(224, 24, 24);
+    font-weight: bold ;
+}
+
+#showcase
+{
+    min-height: 400px;
+    background: url(1.png) no-repeat center;
+    background-size: cover;
+
+}
+
+#newletter
+{
+    padding: 15px;
+    color: white;
+    background: black ;
+}
+
+#newletter h1
+{
+    float: right;
+
+}
+
+#newletter form
+{
+    float: left;
+    margin-top: 15px;
+}
+
+#newletter input[type = "email"]
+{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+
+
+}
+
+.button 
+{
+    height: 38px;
+    background: rgb(119, 108, 108);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #353637;
+}
+
+#boxes
+{
+    margin-top: px;
+
+}
+
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    
+}
+
+
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #32a32ac2;
+    text-align: center;
+    font-weight: bol;
+    font-size: 25px;
+}
+
+
+@media(max-width:768px)
+{
+    header #brand,
+    header nav,
+    header nav li,
+    #newletter form,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header
+    {
+        padding-bottom: 20px;
+    }
+
+    #newletter .button
+    {
+        display: block;
+        width:100%;
+
+    }
+
+    #newletter form input[type = "email"]
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
